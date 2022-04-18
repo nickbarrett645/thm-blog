@@ -1,0 +1,23 @@
+{
+  "name": "thm-blog",
+  "version": "1.0.0",
+  "description": "My blog that covers the use  of the TryHackMe site",
+  "main": "index.js",
+  "scripts": {
+      "start": "eleventy --serve",
+      "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickbarrett645/thm-blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickbarrett645/thm-blog/issues"
+  },
+  "homepage": "https://github.com/nickbarrett645/thm-blog#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
