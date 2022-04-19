@@ -1,5 +1,5 @@
 ---
-title: Day 1
+title: Day One
 ---
 
 I completed **Cyber Security Introduction**, **What is Networking?**, and **Intro to LAN**
