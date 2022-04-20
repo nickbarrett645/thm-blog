@@ -1,5 +1,6 @@
 ---
 title: Day One
+date: 2022-04-14
 ---
 
 I completed **Cyber Security Introduction**, **What is Networking?**, and **Intro to LAN**

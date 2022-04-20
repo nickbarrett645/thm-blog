@@ -1,5 +1,6 @@
 ---
 title: Day Six
+date: 2022-04-19
 ---
 
 Starting on Windows Fundamentals 1, not really familiar with using windows so this should be helpful

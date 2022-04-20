@@ -1,5 +1,6 @@
 ---
 title: Day Five
+date: 2022-04-18
 ---
 
 Starting on exercise 7 an introduction to shell operators

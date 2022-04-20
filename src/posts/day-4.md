@@ -1,5 +1,6 @@
 ---
 title: Day Four
+date: 2022-04-17
 ---
 
 Finished how websites work and putting it all together
