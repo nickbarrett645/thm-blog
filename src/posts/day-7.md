@@ -3,7 +3,7 @@ title: Day Seven
 date: 2022-04-20
 ---
 
-
+{{ page.date.toDateString }}
 
 Starting the **Complete Beginner** learning path today. I expect it to be mostly easy, much like the Presecurity path, but there should be some interesting stuff in some of the rooms.
 

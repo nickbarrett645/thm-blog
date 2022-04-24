@@ -3,6 +3,8 @@ title: Day Five
 date: 2022-04-18
 ---
 
+{{ page.date.toDateString }}
+
 Starting on exercise 7 an introduction to shell operators
 This exercise was easy but did not include examples for && or &
 Here’s some examples:

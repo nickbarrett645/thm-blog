@@ -3,6 +3,8 @@ title: Day Six
 date: 2022-04-19
 ---
 
+{{ page.date.toDateString }}
+
 Starting on Windows Fundamentals 1, not really familiar with using windows so this should be helpful
 Downloaded Remote Desktop from the App Store, but using the in browser vm for now
 Finished windows fundamentals 1 pretty easy, the only question that required some digging was TODO
