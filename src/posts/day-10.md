@@ -1,6 +1,7 @@
 ---
 title: Day 10
 date: 2022-04-23
+layout: post.njk
 ---
 
 {{ page.date.toDateString }}

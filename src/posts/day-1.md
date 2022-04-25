@@ -1,6 +1,7 @@
 ---
 title: Day One
 date: 2022-04-14
+layout: post.njk
 ---
 
 {{ page.date.toDateString }}

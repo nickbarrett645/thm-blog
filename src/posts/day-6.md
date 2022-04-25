@@ -1,6 +1,7 @@
 ---
 title: Day Six
 date: 2022-04-19
+layout: post.njk
 ---
 
 {{ page.date.toDateString }}

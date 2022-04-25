@@ -1,6 +1,7 @@
 ---
 title: Day Seven
 date: 2022-04-20
+layout: post.njk
 ---
 
 {{ page.date.toDateString }}

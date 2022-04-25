@@ -1,6 +1,7 @@
 ---
 title: Day Nine
 date: 2022-04-22
+layout: post.njk
 ---
 
 {{ page.date.toDateString }}
