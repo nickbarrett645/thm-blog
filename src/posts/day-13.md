@@ -35,5 +35,3 @@ It was able to brute force the password quickly and gave me a password of...`pas
 
 Overall it was a module and I really enjoyed getting to do some exploitation. Looking forward to [Netowork Services 2](https://tryhackme.com/room/networkservices2) tomorrow!
 
-Happy Hacking.
-

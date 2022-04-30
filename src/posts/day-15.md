@@ -103,6 +103,3 @@ the -p flag maintains the permissions of the file.
 I then got root and got the flag in the root directory!
 
 This was a great section of the module. I definitely picked up a ton here, and I'm looking forward to the next two sections of this module.
-
-
-Happy Hacking.

@@ -31,5 +31,3 @@ Dig was also easy, there weren't any issues there. I would reccomend running a d
 So after seven days I've completed 20 rooms and one full learning path. Im definitely feeling good about the process so far. I don't want to over do it but I defintiely want to get to 365 days of hacking and 365 days of blogs.
 
 I'm still trying to figure out a more ogranized structure for these blogs so they could potentially be a little more useful. I want to do one thing each day to improve the site. I tihnk next two items on the list will be a CICD process, which is already sort of in place with Netlify.
-
-Happy hacking and see you tomorrow!

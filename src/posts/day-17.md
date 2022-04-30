@@ -141,5 +141,3 @@ I think one of the big things I learned from these is that an attack path usuall
 Here a couple extra links for more reading:
 [VPN exploits](https://www.nextgov.com/cybersecurity/2019/10/nsa-warns-vulnerabilities-multiple-vpn-services/160456/)
 [Common Exploits](https://web.mit.edu/rhel-doc/4/RH-DOCS/rhel-sg-en-4/ch-exploits.html)
-
-Happy Hacking.

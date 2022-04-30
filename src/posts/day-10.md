@@ -7,5 +7,3 @@ layout: post.njk
 {{ page.date.toDateString }}
 
 I answered a single question in the NMap room again to keep the streak alive. Tomorrow I'll be back at it and I'll give my full imporession of the NMap room.
-
-Happy Hacking.

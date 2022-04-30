@@ -22,5 +22,3 @@ IMAP stands for Internet Message Access Protocol.
 [Here](https://www.afternerd.com/blog/smtp/) are some more details on the implementation.
 
 I'll spend more time digging into the finer details of this later and I'm going to try and finish the rest of this module tomorrow morning hopefully.
-
-Happy Hacking.
