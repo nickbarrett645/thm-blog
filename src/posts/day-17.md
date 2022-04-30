@@ -132,10 +132,14 @@ In the list of password hashes there was: `carl:*EA031893AA21444B170FC2162A56978
 
 and got: `doggie           (carl)`
 
-I then resued those credentials for ssh and was able to get the final flag.
+I then reused those credentials for ssh and was able to get the final flag.
 
 This module was great just like the first one. I got exposure to a lot of tools and started to get the basics of metasploit down. I think metasploit is kind of looked down upon because it it kind of a crutch and does a lot of work for you without understanding what is going on. For now though Its helpful to use.
 
 I think one of the big things I learned from these is that an attack path usually invovles some pivots. You may exploit some service that gives you some info that you use with another service, which leads you to more info and maybe the ability to finally gain a shell.
+
+Here a couple extra links for more reading:
+[VPN exploits](https://www.nextgov.com/cybersecurity/2019/10/nsa-warns-vulnerabilities-multiple-vpn-services/160456/)
+[Common Exploits](https://web.mit.edu/rhel-doc/4/RH-DOCS/rhel-sg-en-4/ch-exploits.html)
 
 Happy Hacking.
