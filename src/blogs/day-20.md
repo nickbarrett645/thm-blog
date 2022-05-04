@@ -109,7 +109,7 @@ Heres come example payloads:
 
 The first reflected XSS payload I used was `<script>alert('Hello')</script>` then `<script>alert(document.location.hostname)</script>`.
 
-In the stored XSS payload I did ``<strong>test</strong>` then `<script>alert(document.cookies)</script>` then `<script>document.getElementById('thm-title').innertext = 'I am a hacker'</script>`
+In the stored XSS payload I did `<strong>test</strong>` then `<script>alert(document.cookies)</script>` then `<script>document.getElementById('thm-title').innertext = 'I am a hacker'</script>`
 
 ## Insecure Deserialization
 This is when data that is suppose to be processed by an appliation is replaced with malicious code. This can result in anything from a DOS to an RCE.
