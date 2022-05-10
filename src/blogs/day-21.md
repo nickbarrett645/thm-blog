@@ -5,6 +5,7 @@ layout: post.njk
 ---
 
 {{ page.date.toDateString }}
+
 Today I'm starting on the [OWASP Juice Shop](https://tryhackme.com/room/owaspjuiceshop). This is a real app that was made intentionally vulnerable so that people can test out vulnerablities in a safe way. [Here](https://owasp.org/www-project-juice-shop/) is the link to the OWAS page.
 
 ## Basic Recon

@@ -5,6 +5,7 @@ layout: post.njk
 ---
 
 {{ page.date.toDateString }}
+
 Today I'm still working on the [Upload Vulnerabilities](https://tryhackme.com/room/uploadvulns) module, and starting the practical for avoiding server side filtering. Client filtering is easy to bypass because you can see the code and manipulate it, but server side is more difficult because you cannot see the code and you can't change it.
 
 ## Server Side Filtering - File Extensions

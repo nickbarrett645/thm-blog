@@ -5,6 +5,7 @@ layout: post.njk
 ---
 
 {{ page.date.toDateString }}
+
 Today I'm wokring on the [Upload Vulnerabilities](https://tryhackme.com/room/uploadvulns) module. I think really understanding how to take advantage of file upload vulnerabilities could be a huge help in finding bug bounties.
 
 Theres a few different things you can do with file upload vulnerabilites:
