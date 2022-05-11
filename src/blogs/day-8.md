@@ -2,6 +2,7 @@
 title: Day Eight
 date: 2022-04-21
 layout: post.njk
+tags: daily
 ---
 
 {{ page.date.toDateString }}

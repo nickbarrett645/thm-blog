@@ -2,6 +2,7 @@
 title: Day 16
 date: 2022-04-29
 layout: post.njk
+tags: daily
 ---
 
 {{ page.date.toDateString }}

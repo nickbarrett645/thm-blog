@@ -2,6 +2,7 @@
 title: Day Seven
 date: 2022-04-20
 layout: post.njk
+tags: daily
 ---
 
 {{ page.date.toDateString }}

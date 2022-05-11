@@ -2,6 +2,7 @@
 title: Day 19
 date: 2022-05-02
 layout: post.njk
+tags: daily
 ---
 
 {{ page.date.toDateString }}

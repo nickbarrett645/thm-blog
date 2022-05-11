@@ -2,6 +2,7 @@
 title: Day 27
 date: 2022-05-10
 layout: post.njk
+tags: daily
 ---
 
 {{ page.date.toDateString }}
