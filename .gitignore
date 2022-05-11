@@ -108,3 +108,5 @@ dist
 
 # build folder
 _site
+
+.DS_Store
