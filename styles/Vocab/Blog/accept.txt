@@ -1,2 +1,11 @@
+AttackBox
+enumerate
+Gobuster
+hexeditor
+indexed
+Netcat
 Netlify
+Nmap
 smbclient
+successfully
+Wappalyzer
