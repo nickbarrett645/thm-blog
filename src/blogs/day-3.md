@@ -6,4 +6,4 @@ layout: post.njk
 
 {{ page.date.toDateString }}
 
-I only did one question today on **How Websites Work** to keep the streak alive, will be back at it tomorrow.
+I did one question today on [How Websites Work](https://tryhackme.com/room/howwebsiteswork) to keep the streak alive. I will be back at it tomorrow.

@@ -1,4 +1,6 @@
 AttackBox
+crontab
+[Cc]yber
 enumerate
 Gobuster
 hexeditor
@@ -8,4 +10,5 @@ Netlify
 Nmap
 smbclient
 successfully
+systemctl
 Wappalyzer

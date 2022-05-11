@@ -6,6 +6,6 @@ layout: post.njk
 
 {{ page.date.toDateString }}
 
-I completed **Cyber Security Introduction**, **What is Networking?**, and **Intro to LAN**
+I completed [Cyber Security Introduction](https://tryhackme.com/room/beginnerpathintro), [What is Networking?](https://tryhackme.com/room/whatisnetworking), and [Intro to LAN](https://tryhackme.com/room/introtolan).
 
 All were pretty easy.
