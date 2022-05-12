@@ -8,7 +8,10 @@ indexed
 Netcat
 Netlify
 Nmap
+Pre
 smbclient
 successfully
 systemctl
+traceroute
 Wappalyzer
+whois
