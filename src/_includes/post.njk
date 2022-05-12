@@ -17,18 +17,20 @@
     <main>
         {{content | safe}}
         <p>Happy Hacking.</p>
-        {% if nextPost.url %}
-            <p class="ctr">
-            <strong>Next</strong>:
-            <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
-            </p>
-        {% endif %}
+    </main>
+    <footer>
         {% if prevPost.url %}
-            <p class="ctr">
+            <div class="ctr">
             <strong>Previous</strong>:
             <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
-            </p>
+            </div>
         {% endif %}
-    </main>
+        {% if nextPost.url %}
+            <div class="ctr">
+            <strong>Next</strong>:
+            <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+            </div>
+        {% endif %}
+    </footer>
 </body>
 </html>
