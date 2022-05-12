@@ -3,11 +3,13 @@ crontab
 [Cc]yber
 enumerate
 Gobuster
+[Hh]ashcat
 hexeditor
 indexed
 Netcat
 Netlify
 Nmap
+[Pp]laintext
 Pre
 smbclient
 successfully
