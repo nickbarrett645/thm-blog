@@ -6,6 +6,7 @@ Gobuster
 [Hh]ashcat
 hexeditor
 indexed
+MSFVenom
 Netcat
 Netlify
 Nmap

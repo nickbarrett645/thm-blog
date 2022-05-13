@@ -7,6 +7,6 @@ tags: daily
 
 {{ page.date.toDateString }}
 
-Busy day at work, and eneded up working late trying to get stuff done. I only did the first question of the [Network Services 2](https://tryhackme.com/room/networkservices2) to keep the streak alive.
+Busy day at work, and ended up working late trying to get stuff done. I did the first question of the [Network Services 2](https://tryhackme.com/room/networkservices2) to keep the streak alive.
 
-Tomorrow I'll be busy again, but I will try to get up early and get back at it!
+Tomorrow I'll be busy again, but I will try to get up and get back at it!
