@@ -1,5 +1,7 @@
 AttackBox
+[Cc]iphertext
 crontab
+[Cc]rypto
 [Cc]yber
 enumerate
 Gobuster
@@ -16,5 +18,6 @@ smbclient
 successfully
 systemctl
 traceroute
+unrar
 Wappalyzer
 whois
