@@ -1,8 +1,10 @@
+Adleman
 AttackBox
 [Cc]iphertext
 crontab
 [Cc]rypto
 [Cc]yber
+Diffie
 enumerate
 Gobuster
 [Hh]ashcat
@@ -14,6 +16,8 @@ Netlify
 Nmap
 [Pp]laintext
 Pre
+Rivest
+Shamir
 smbclient
 successfully
 systemctl
