@@ -9,30 +9,30 @@ tags: daily
 
 I wanted to knock out a module this morning, but I was busy with work again so I'm not getting to this until later.
 
-The frist section is about NFS or [Network File System](https://en.wikipedia.org/wiki/Network_File_System). It just goes over the protocol at a high level but there are more details [here](https://docs.oracle.com/cd/E19683-01/816-4882/6mb2ipq7l/index.html).
+The first section is about NFS or [Network File System](https://en.wikipedia.org/wiki/Network_File_System). It just goes over the protocol at a high level but there are more details [here](https://docs.oracle.com/cd/E19683-01/816-4882/6mb2ipq7l/index.html).
 
 I thought this was an interesting section in the reading:
-> If someone wants to access a file using NFS, an RPC call is placed to NFSD (the NFS daemon) on the server. This call takes parameters such as:
+> If someone wants to access a file using NFS, an you send a RPC call to NFSD (the NFS daemon) on the server. This call takes parameters such as:
 > - The file handle
-> - The name of the file to be accessed
+> - The name of the file you want to access
 > - The user's, user ID
 > - The user's group ID
-> These are used in determining access rights to the specified file. This is what controls user permissions, I.E read and write of files.
+> NFS uses these parameters in determining access rights to the specified file. This is what controls user permissions, I.E read and write of files.
 
-How do you pass the paramters into the call? Can it be faked? How does the authentication work? I'm guessing most of the exploitations will center around misconfigurations, but I'm curious how it works at a low level.
+How do you pass the parameters into the call? Can you fake the parameters? How does the authentication work? I'm guessing most of the exploitations will center around misconfigurations, but I'm curious how it works at a low level.
 
-Here are some more usefule links:
+Here are some more useful links:
 
 - [datto](https://www.datto.com/blog/what-is-nfs-file-share)
-- [sourceforge](http://nfs.sourceforge.net/)
-- [arch linux](https://wiki.archlinux.org/title/NFS)
+- [Sourceforge](http://nfs.sourceforge.net/)
+- [Arch Linux](https://wiki.archlinux.org/title/NFS)
 
-All the questions were easy and in the reading except for the question: what was the most recent version of NFS which I googled and got the answer on wikipedia.
+All the questions were easy and in the reading except for the question: what was the most recent version of NFS which I googled and got the answer on Wikipedia.
 
 
 In the enumeration phase of NFS I first learned about [nfs-common](https://packages.ubuntu.com/bionic/nfs-common).
 
-So I first ran a port scan to see what ports are open I ran `nmap -sS <ip> -p-` I ran `-sS` to get information about the services running on the open ports.
+I first ran a port scan to see what ports are open I ran `nmap -sS <ip> -p-` I ran `-sS` to get information about the services running on the open ports.
 I'm not sure if its the box but anytime I run a scan with -p- it's crazy slow.
 
 Ok so that scan was going crazy slow it I changed it to:
@@ -76,7 +76,7 @@ I ran:
 >
 >`cappucino`
 
-That directory appeared to be a home directory for a user. It contained a .ssh file with an id_rsa. I copied that file out, changed the permissions to `600` and logged in via ssh using
+That directory appeared to be a home directory for a user. It contained a .ssh file with an `id_rsa`. I copied that file out, changed the permissions to `600` and logged in via SSH using
 
 >`ssh -i id_rsa cappucino@<ip>`.
 
@@ -84,7 +84,7 @@ Last part is exploiting NFS!
 
 The reading talks about Root Squashing and the creation of SUID bit files.
 
-So I downloaded the correspoding bash shell from this [github](https://github.com/TheRealPoloMints/Blog/blob/master/Security%20Challenge%20Walkthroughs/Networks%202/bash). I copied it into the mounted directory. I changed the owner to root via:
+I downloaded the corresponding bash shell from this [GitHub](https://github.com/TheRealPoloMints/Blog/blob/master/Security%20Challenge%20Walkthroughs/Networks%202/bash). I copied it into the mounted directory. I changed the owner to root via:
 
 >`$ chown root bash`
 
@@ -95,7 +95,7 @@ I added the SUID permission via:
 >
 >`-rwsr-sr-x 1 root root 1113504 Apr 29 03:25 bash`
 
-Finally in the ssh session I ran:
+Lastly in the ssh session I ran:
 
 > `./bash -p`
 
@@ -103,4 +103,4 @@ the -p flag maintains the permissions of the file.
 
 I then got root and got the flag in the root directory!
 
-This was a great section of the module. I definitely picked up a ton here, and I'm looking forward to the next two sections of this module.
+This was a great section of the module. I picked up a ton here, and I'm looking forward to the next two sections of this module.

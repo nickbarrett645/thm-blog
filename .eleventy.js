@@ -20,7 +20,7 @@ module.exports = function(eleventyConfig) {
         }
       
         return coll;
-      });
+    });
 
     return {
         dir: {
