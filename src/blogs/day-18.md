@@ -7,7 +7,7 @@ tags: daily
 
 {{ page.date.toDateString }}
 
-Today I'm working on the [Burp Suite: The Basics](https://tryhackme.com/room/burpsuitebasics) room. This will be the first tool with a GUI that I'll be using. I'm really interested in learning the basics here and then maybe taking a look at what is offered at The [PortSwigger Web Security Academy](https://portswigger.net/web-security).
+Today I'm working on the [Burp Suite: The Basics](https://tryhackme.com/room/burpsuitebasics) room. This will be the first tool with a GUI that I'll be using. I'm interested in learning the basics here and then maybe taking a look at what the [PortSwigger Web Security Academy](https://portswigger.net/web-security) offers.
 
 The module will be more theory based and less practical so I'll make some notes along the way and we will do some experimenting on our own.
 
@@ -19,7 +19,7 @@ Theres 3 versions of Burp Suite:
 - Burp Suite Enterprise
     - Run continuously on a web server to scan web apps
 
-Although the community edition has a limited set of features it has some very important ones like:
+Although the community edition has a limited set of features it has some important ones like:
 - Proxy
     - Intercept traffic and modify it before sending it on.
 - Repeater
@@ -49,9 +49,9 @@ User options are global configurations for Burp Suite and Project options are pr
 
 ## Proxy
 
-This tool is used to intercept traffic from the browser before going to the server. Requests will be intercepted and can be edited and forwarded by clicking the `Forward` button (Ctrl+F) or Dropping the intercepted request by clicking the `Drop` button.
+This tool is used to intercept traffic from the browser before going to the server. BurpSuit intercepts the request and can edit and then forward by clicking the `Forward` button (Ctrl+F) or Dropping the intercepted request by clicking the `Drop` button.
 
-There is a button: `Intercept On` which means the request will be intercepted, that can be turned off by clicking it. All requests will still be logged however. Requests can also be intercepted on the way back but that needs to be turned on.
+On the proxy page there is a button: `Intercept On` which means the request will be intercepted, that can be turned off by clicking it. All requests will still be logged however. Requests can also be intercepted on the way back but that needs to be turned on.
 
 ### FoxyProxy
 FoxyProxy is a browser extension that sets up a proxy. You can install the extension in Firefox, open it, click add and by default Burp Suite is on 127.0.0.1:8080. Then select it from the list to turn it on.
@@ -86,11 +86,11 @@ Finally after all the theory we get to actually use the tool.
 
 First step was to navigate to the `/ticket` page. There was a form there. I attempted to enter a XSS example: `<script>alert("Succ3ssful XSS")</script>`in one of the fields, but there was client side filtering.
 
-So I entered real data, clicked submit and intercepted the call. I replaced the email parameter with the XSS string and then encoded the characters by highlighting it and pressing `Ctrl+U`. I then forwarded the call and then the alert displayed on the screen!
+I entered real data, clicked submit and intercepted the call. I replaced the email parameter with the XSS string and then encoded the characters by highlighting it and pressing `Ctrl+U`. I then forwarded the call and then the alert displayed on the screen!
 
 There was a lot of info in this one and less practical exercises but it was still enjoyable and I got to mess around with the tool on my own.
 
-I'm almost 50% through the Complete Begginer learning path so I've made a lot of progress in 18 days and I'm looking forward to more!
+I'm almost 50% through the Complete Beginner learning path so I've made a lot of progress in 18 days and I'm looking forward to more!
 
 
 

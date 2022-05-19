@@ -16,7 +16,7 @@ This is when user input is interpreted as actual commands on the system. Two exa
 -Command injection
     - When user controlled input is passed to system commands.
 
-There are two main defenses:
+Two main defenses:
 - Using an allow list of inputs or characters.
 - Stripping the input of dangerous characters.
 
@@ -56,10 +56,10 @@ This is when a webapp exposes sensitive data likes names, DOBs, financial inform
 
 ### Sensative Data Exposure Practical
 
-We had an ip which loaded a website. There was a hint in the description about a flat file db being located somewhere in the root of the website. I was poking around but didn't see much. So I opened up the html and saw a comment that said,
+We had an ip which loaded a website. There was a hint in the description about a flat file db being located somewhere in the root of the website. I was poking around but didn't see much. I opened up the html and saw a comment that said,
 >Must remember to do something better with the database than store it in /assets...
 
-So I navigated to /assets and there was a webapp.db file. I downlaoded it and opened it with `sqlite3`.
+I navigated to /assets and there was a webapp.db file. I downloaded it and opened it with `sqlite3`.
 
 I ran `.tables` to view the tables and saw one was called *users* so I ran `.schame users` and got:
 >`sqlite> .schema users`
@@ -76,7 +76,7 @@ I ran `.tables` to view the tables and saw one was called *users* so I ran `.sch
 >
 >`PRIMARY KEY(userID));`
 
-So I then I just ran `select * from users;` and got the all the passwords. I was then able to use crackstation to 
+I ran `select * from users;` and got the all the passwords. I was then able to use crackstation to 
 get the passwords:
 - qwertyuiop
 - test2

@@ -12,12 +12,12 @@ It's day 20 and I'm picking back up on the [OWASP Top](https://tryhackme.com/roo
 ## XML External Entity - Severity 4
 An XML External Entity (XXE) attack is a vulnerability in XML parsers/data. XXE can lead a number of issues like DoS, Server-Side Request Forgery, and RCE.
 
-There are two kinds of XXE attacks:
+Two kinds of XXE attacks:
 - In-band XXE is one where the attackers receives an immediate response from the XXe payload.
 - Out-of-band XXE or blind XXE is when there is no immediate response from the server.
 
 ### XML
-XML (eXtensible Markup Language) is a set of rules for encoding a document in a format that is both human and machine reable.
+XML (eXtensible Markup Language) is a set of rules for encoding a document in a format that is both human and machine readable.
 
 It is independent of platform and programming language, can be validated using DTD or Schema, and is used for transporting data.
 
@@ -33,7 +33,7 @@ it would look something like this:
 
 `<!DOCTYPE note [ <!ELEMENT note (to,from,heading,body)> <!ELEMENT to (#PCDATA)> <!ELEMENT from (#PCDATA)> <!ELEMENT heading (#PCDATA)> <!ELEMENT body (#PCDATA)> ]>`
 
-whihc would lead to an xml document like the following be valid:
+which would lead to an xml document like the following be valid:
 >`<?xml version="1.0" encoding="UTF-8"?>`
 >
 >`<!DOCTYPE note SYSTEM "note.dtd">`
@@ -91,11 +91,11 @@ For example:
 - Error messages that are overly detailed and allow the user to learn more about the system
 - Not using [HTTP security headers](https://owasp.org/www-project-secure-headers/).
 
-For this exercise I went to the website and I tried a few variations of admin / password with no louck. I then looked at the page source and javascript files and I was able to find any comments that may be helpful. Then I googled the name of the app Pensive Notes and I found a github repo with the code and the README.md contained the default credentials. I was then able to login and get the flag.
+For this exercise I went to the website and I tried a few variations of admin / password with no luck. I then looked at the page source and javascript files and I was able to find any comments that may be helpful. Then I googled the name of the app Pensive Notes and I found a github repo with the code and the README.md contained the default credentials. I was then able to login and get the flag.
 
 ## XSS
 Cross-site scripting (XSS) is a vulnerability in web applications where an attacker can inject malicious scipts and have them execute on a victims machine.
-There are three main types:
+Three main types of XSS attacks:
 1. Stored XSS
     - Where a malicious string is stored in the applications database.
 2. Reflected XSS
@@ -126,7 +126,7 @@ In Firefox you can open up the devtools and then go to storage and cookies.
 In the first exercise I changed the cookie name userType from `user` to `admin` and I was able to access the admin page.
 In the second exercise I just use a base64 decode tool to decode the sessionId and there was a flag in there.
 
-For the second more involved part I was asked to click a link which gave me a cookie which was base64 encoded, then I navigated to a different page to "provide feedback" I downloaded this [script](https://assets.tryhackme.com/additional/cmn-owasptopten/pickleme.py) and changed the IP to the one for the attack box. I ran script and then changed the cookies value to be the base64 encoded value of my script which woudl spawn a reverse shell. I set up a netcat listener on my box and then refreshed the page and I had the shell. A quick look around and I found `flag.txt`.
+For the second more involved part I was asked to click a link which gave me a cookie which was base64 encoded, then I navigated to a different page to "provide feedback" I downloaded this [script](https://assets.tryhackme.com/additional/cmn-owasptopten/pickleme.py) and changed the IP to the one for the attack box. I ran script and then changed the cookies value to be the base64 encoded value of my script which would spawn a reverse shell. I set up a Netcat listener on my box and then refreshed the page and I had the shell. A quick look around and I found `flag.txt`.
 
 ## Component With Known Vulnerabilities - Severity 9
 This is when you use out of date software that has well documented known vulnerabilities that are easily executed.

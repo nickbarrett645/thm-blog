@@ -67,7 +67,7 @@ I then clicked start and waited for it to slowly work through the passwords. The
 The next task was to change the password for jim@juice-sh.op. If you go to the forgot password page and put in his email the security question is the middle name of your oldest sibling. From the previous exercise it referenced the replicator which is in star trek so I googled jim star treck and it comes up with James T Kirk. His siblings are listed on the wikipedia page. I was then able to change the password.
 
 ## Sensitive Data Exposure
-Here the exercise said to navigate to the about us page. There was a link to a terms of use document. If you look at the link it contained the directory `/ftp`. I then navigated to the `/ftp` directory in the browser and was able to see a number of documents. I downloaded the acquisitions.md document and receieved the flag
+Here the exercise said to navigate to the about us page. There was a link to a terms of use document. If you look at the link it contained the directory `/ftp`. I then navigated to the `/ftp` directory in the browser and was able to see a number of documents. I downloaded the `acquisitions.md` document and received the flag
 
 Next it had me watch a video on mc safesearch and he reveals his password in the video.
 

@@ -7,7 +7,7 @@ tags: daily
 
 {{ page.date.toDateString }}
 
-Today I'm wokring on the [Upload Vulnerabilities](https://tryhackme.com/room/uploadvulns) module. I think really understanding how to take advantage of file upload vulnerabilities could be a huge help in finding bug bounties.
+Today I'm working on the [Upload Vulnerabilities](https://tryhackme.com/room/uploadvulns) module. I think really understanding how to take advantage of file upload vulnerabilities could be a huge help in finding bug bounties.
 
 Theres a few different things you can do with file upload vulnerabilites:
 - Overwriting existing files on a server
@@ -25,7 +25,7 @@ The second exercise was taking advantage of an RCE. The two main options:
 - Reverse Shells
 
 ### Web Shell
-A webshell would be uploading a file with code that is the same as the backend. Then referencing it and using the ulr to pass commands. For example I use gobuster to do some directory enumeration. I see that there is a upload directory and I make the assumption that files are uploaded there. I assume the backend is running PHP.  so I upload `webshell.php` which is just:
+A webshell would be uploading a file with code that is the same as the backend. Then referencing it and using the URL to pass commands. For example I use Gobuster to do some directory enumeration. I see that there is a upload directory and I make the assumption that files are uploaded there. I assume the backend is running PHP.  so I upload `webshell.php` which is just:
 
 >`<?php`
 >
@@ -33,13 +33,13 @@ A webshell would be uploading a file with code that is the same as the backend. 
 >
 >`?>`
 
-the I use the url `/uploads/webshell.php?cmd=id;whoami;ls` and view the page and I'll see the result of those commands being run. From here we can do anything including upgrading to a reverse shell.
+the I use the URL `/uploads/webshell.php?cmd=id;whoami;ls` and view the page and I'll see the result of those commands being run. From here we can do anything including upgrading to a reverse shell.
 
 ### Reverse Shell
-Is when you have an interactive shell in a terminal. The process for doing this is essentially the same as the webshell you take a file like [Pentest Monkey reverse shell](https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php) that matches the backend code being used by the application and input your IP. You open a netcat listener on the correct port using `nc -lvnp 1234`. You upload the file, then navigate to the file in your browser. This time the browser will hang but if you look back at the terminal you should have a connection.
+Is when you have an interactive shell in a terminal. The process for doing this is essentially the same as the webshell you take a file like [Pentest Monkey reverse shell](https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php) that matches the backend code being used by the application and input your IP. You open a Netcat listener on the correct port using `nc -lvnp 1234`. You upload the file, then navigate to the file in your browser. This time the browser will hang but if you look back at the terminal you should have a connection.
 
 ### Practical
-In this exercise I start by running gobuster to enumerate the directories using `gobuster dir -u http://shell.uploadvulns.thm -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt`
+In this exercise I start by running Gobuster to enumerate the directories using `gobuster dir -u http://shell.uploadvulns.thm -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt`
 
 I got the results:
 >`/resources`

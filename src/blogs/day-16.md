@@ -9,12 +9,12 @@ tags: daily
 
 Today was another long day and I didn't finish working until late so I just knock out a couple questions in the first section for SMTP.
 
-SMTP is Simple Mail Transfer Protocol and is one part of a pair protocols used to send email. It is either paired with POP or IMAP.
+SMTP is Simple Mail Transfer Protocol and is one part of a pair protocols used to send email. SMTP is either paired with POP or IMAP.
 
 SMTP does three basic things:
 - Verifies who is sending emails.
 - Sends outgoing mail.
-- If the outgoing mail can't be sent it sends the message back to the sender.
+- If the outgoing mail can't send it sends the message back to the sender.
 
 POP stands for Post Office Protocol.
 IMAP stands for Internet Message Access Protocol.
