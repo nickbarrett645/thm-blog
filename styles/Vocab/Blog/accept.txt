@@ -17,7 +17,7 @@ indexed
 Metasploit
 [Mm]isconfigure
 [Mm]isconfigurations
-MSFVenom
+MSFvenom
 Netcat
 Netlify
 Nmap
