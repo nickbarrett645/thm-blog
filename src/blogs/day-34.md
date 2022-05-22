@@ -1,9 +1,11 @@
 ---
 title: Day 34
-date: 2022-05-17
+date: "2022-05-17"
 layout: post.njk
 tags: daily
 ---
+
+{{ page.date.toDateString }}
 
 Today I'm starting the [Active Directory](https://tryhackme.com/room/activedirectorybasics) module. It's late so I'm answering one question to keep my streak alive and I'll try to finish the module tomorrow.
 

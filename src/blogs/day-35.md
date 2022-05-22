@@ -5,6 +5,8 @@ layout: post.njk
 tags: daily
 ---
 
+{{ page.date.toDateString }}
+
 Today I'm continuing the [Active Directory](https://tryhackme.com/room/activedirectorybasics) module.
 
 ## Physical Active Directory
