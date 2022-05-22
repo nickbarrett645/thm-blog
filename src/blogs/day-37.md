@@ -5,6 +5,8 @@ layout: post.njk
 tags: daily
 ---
 
+{{ page.date.toDateString }}
+
 ## Introduction to Metasploit
 Metasploit is a widely used exploitation framework that can support all phases of a penetration test. Metasploit comes in two versions, and commericial version, and an opensource version.
 
