@@ -9,10 +9,16 @@
 </head>
 <body>
     <header>
-        <h1>{{ title }}</h1>
-        <a href="/">Home</a>
-        <a href="/About">About</a>
+        <div id="nav-container">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/About">About</a></li>
+            </ul>
+        </nav>
+        </div>
     </header>
+     <h1>{{ title }}</h1>
     <main>
         {{content | safe}}
     </main>
